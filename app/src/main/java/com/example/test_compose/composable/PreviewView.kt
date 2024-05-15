@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -19,14 +20,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-@Preview()
 @Composable
 fun BoxTest() {
 
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Blue )
+            .background(Color.Blue)
 
     ) {
 
@@ -41,6 +41,8 @@ fun BoxTest() {
         }
 
     }
+
+
 }
 
 @Composable
@@ -54,4 +56,20 @@ fun RowScope.MyItem() {
             counter++
         }
     )
+}
+
+@Preview
+@Composable
+fun testButton() {
+
+
+    Button(
+        onClick = {
+
+
+        },
+    ) {
+        Text(text = "Num  ")
+
+    }
 }
